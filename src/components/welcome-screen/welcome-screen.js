@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const WelcomeScreen = (props) => {
-  const aboutApartment = props.aboutApartment;
-  const apartmentCard = aboutApartment.map((item, id) =>
+  const aboutApartments = props.offers;
+  const apartmentCards = aboutApartments.map((item, id) =>
 
     <article key={item + `-` + id} className="cities__place-card place-card">
       <div className="place-card__mark">
@@ -133,7 +133,7 @@ const WelcomeScreen = (props) => {
               </form>
               <div className="cities__places-list places__list tabs__content">
 
-                {apartmentCard}
+                {apartmentCards}
 
               </div>
             </section>

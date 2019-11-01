@@ -5,7 +5,7 @@ const descriptions = [`Beautiful & luxurious apartment at great location`, `Wood
 
 const App = () => {
   return (
-    <WelcomeScreen aboutApartment={descriptions} />
+    <WelcomeScreen offers={descriptions} />
   );
 };
 
