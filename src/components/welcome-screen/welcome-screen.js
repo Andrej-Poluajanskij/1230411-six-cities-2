@@ -149,7 +149,7 @@ const WelcomeScreen = (props) => {
 
 
 WelcomeScreen.propTypes = {
-  aboutApartment: PropTypes.string.isRequired
+  offers: PropTypes.string.isRequired
 };
 
 export default WelcomeScreen;
