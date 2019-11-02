@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const WelcomeScreen = (props) => {
+  const {clickHandler} = props;
   const aboutApartments = props.offers;
   const apartmentCards = aboutApartments.map((item, id) =>
 
@@ -34,7 +35,7 @@ const WelcomeScreen = (props) => {
           </div>
         </div>
         <h2 className="place-card__name">
-          <a href="#">{item}</a>
+          <a className="place-card__descriptions" onClick={clickHandler} href="#">{item}</a>
         </h2>
         <p className="place-card__type">Apartment</p>
       </div>
@@ -149,7 +150,8 @@ const WelcomeScreen = (props) => {
 
 
 WelcomeScreen.propTypes = {
-  offers: PropTypes.array.isRequired
+  offers: PropTypes.array.isRequired,
+  clickHandler: PropTypes.func.isRequired
 };
 
 export default WelcomeScreen;

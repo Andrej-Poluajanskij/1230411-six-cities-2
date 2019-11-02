@@ -5,7 +5,7 @@ const descriptions = [`Beautiful & luxurious apartment at great location`, `Wood
 
 const App = () => {
   return (
-    <WelcomeScreen offers={descriptions} />
+    <WelcomeScreen offers={descriptions} clickHandler={()=>{}}/>
   );
 };
 
