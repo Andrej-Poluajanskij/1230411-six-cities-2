@@ -149,7 +149,7 @@ const WelcomeScreen = (props) => {
 
 
 WelcomeScreen.propTypes = {
-  offers: PropTypes.string.isRequired
+  offers: PropTypes.array.isRequired
 };
 
 export default WelcomeScreen;
