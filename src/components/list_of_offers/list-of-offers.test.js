@@ -1,14 +1,13 @@
 import React from 'react';
 import render from 'react-test-renderer';
-import App from './app';
+import ListOfOffers from './list-of-offers';
 
 import offers from '../../mocks/offers';
 
-it(`App correctly renders after relaunch`, () => {
+it(`ListOfOffers correctly renders after relaunch`, () => {
   const tree = render
-    .create(<App
+    .create(<ListOfOffers
       offers={offers}
-      clickHandler={jest.fn()}
     />)
     .toJSON();
 

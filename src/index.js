@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './components/app/app';
+import offers from './mocks/offers';
 
 
-const init = () => {
+const init = (myOffers) => {
   ReactDOM.render(
-      <App />,
+      <App offers={myOffers}/>,
       document.querySelector(`#root`)
   );
 };
-init();
+init(offers);
