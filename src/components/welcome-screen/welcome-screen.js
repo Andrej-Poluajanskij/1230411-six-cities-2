@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ListOfOffers from '../list_of_offers/list-of-offers';
+import Map from '../city_map/city-map';
 
 const WelcomeScreen = (props) => {
   const {clickHandler, offers} = props;
@@ -104,7 +105,9 @@ const WelcomeScreen = (props) => {
               </div>
             </section>
             <div className="cities__right-section">
-              <section className="cities__map map"></section>
+              <section className="cities__map map">
+                <Map mapMarks={offers}/>
+              </section>
             </div>
           </div>
         </div>

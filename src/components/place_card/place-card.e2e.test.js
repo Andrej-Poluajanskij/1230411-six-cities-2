@@ -8,8 +8,8 @@ Enzyme.configure({adapter: new Adapter()});
 it(`PlaceCard is correctly rendered after e2e test`, () =>{
   const onMauseTest = jest.fn();
   const placeCard = shallow(<PlaceCard
-    mouseEnter={onMauseTest}
     mouseLeave={onMauseTest}
+    mouseEnter={onMauseTest}
     id={{}}
     clickHandler={onMauseTest}
     placeImage={`img/apartment-02.jpg`}
