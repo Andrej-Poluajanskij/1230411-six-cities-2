@@ -1,18 +1,20 @@
 import React from 'react';
 import render from 'react-test-renderer';
-import App from './app';
+import Map from './city-map';
 
 import offers from '../../mocks/offers';
 import util from '../../util';
 
-it(`App correctly renders after relaunch`, () => {
+it(`CityMap correctly renders after relaunch`, () => {
   util();
+
   const tree = render
-    .create(<App
-      offers={offers}
-      clickHandler={jest.fn()}
-    />)
+  .create(<Map
+    mapMarks={offers}
+  />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();
 });
+
+
