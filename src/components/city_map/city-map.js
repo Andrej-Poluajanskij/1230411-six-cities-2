@@ -7,7 +7,6 @@ class Map extends React.PureComponent {
   constructor(props) {
     super(props);
     const {mapMarks} = props;
-    this.state = {marks: mapMarks};
   }
 
   componentDidMount() {
