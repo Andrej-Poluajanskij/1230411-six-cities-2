@@ -48,7 +48,7 @@ class Map extends React.PureComponent {
   render() {
 
     return (
-      <div id="map" style={{height: `97%`, marginTop: `14px`}}>
+      <div id="map" style={{minHeight: `100%`}}>
 
       </div>
 

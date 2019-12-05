@@ -40,7 +40,7 @@ const offers = [
      {
       image: `img/room.jpg`,
       price: `155€`,
-      descriptions: ``,
+      descriptions: `Nice, cozy, warm big bed apartment`,
       type: `Apartment`,
       coordinates: [48.858093, 2.294694]
      },
@@ -53,7 +53,7 @@ const offers = [
     {
       image: `img/apartment-03.jpg`,
       price: `140€`,
-      descriptions: ``,
+      descriptions: `Wood and stone place`,
       type: `Private room`,
       coordinates: [50.933594, 6.961899]
      },
@@ -66,16 +66,16 @@ const offers = [
     {
       image: `img/apartment-01.jpg`,
       price: `185€`,
-      descriptions: ``,
+      descriptions: `Canal View Prinsengracht`,
       type: `Apartment`,
       coordinates: [50.85045, 4.34878]
      },
      {
       image: `img/apartment-03.jpg`,
       price: `140€`,
-      descriptions: ``,
+      descriptions: `Nice, cozy, warm big bed apartment`,
       type: `Private room`,
-      coordinates: [50.933594, 4.961899]
+      coordinates: [50.833594, 4.341899]
      },
    ],
  },
@@ -86,7 +86,7 @@ const offers = [
     {
       image: `img/room.jpg`,
       price: `125€`,
-      descriptions: ``,
+      descriptions: `Canal View Prinsengracht`,
       type: `Private room`,
       coordinates: [53.551086, 9.993682]
      },
@@ -99,14 +99,14 @@ const offers = [
     {
       image: `img/apartment-01.jpg`,
       price: `90€`,
-      descriptions: ``,
+      descriptions: `Best apertments in city center`,
       type: `Private room`,
-      coordinates: [51.233334, 6.783333]
+      coordinates: [52.533334, 6.983333]
      },
      {
       image: `img/room.jpg`,
       price: `125€`,
-      descriptions: ``,
+      descriptions: `Wood and stone place`,
       type: `Private room`,
       coordinates: [52.551086, 6.993682]
      },

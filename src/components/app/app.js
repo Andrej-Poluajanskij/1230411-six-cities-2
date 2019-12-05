@@ -7,7 +7,7 @@ import WelcomeScreen from '../welcome-screen/welcome-screen';
 
 const App = (props) => {
   const {offers} = props;
-
+  console.log(offers)
   return (
     <WelcomeScreen offers={offers} clickHandler={()=>{}}/>
   );
@@ -18,7 +18,7 @@ App.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => Object.assign({}, ownProps, {
-  offers: state.reducer.cityOffers,
+  offers: state.cityOffers,
 });
 
 // const mapDispatchToProps = (dispatch) => ({

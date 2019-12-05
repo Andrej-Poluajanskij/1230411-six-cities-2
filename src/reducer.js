@@ -22,10 +22,10 @@ const transformOffersData = () => offers.map((item) => {
 // };
 
 let offersData = transformOffersData()
-console.log(offersData)
+console.log(offersData[0].cityOffers)
 
 const initialState = {
-  cityOffers: {},
+  cityOffers: offersData[0].cityOffers,
 };
 
 
@@ -37,7 +37,7 @@ const ActionCreator = {
 
   cityOffers: () => ({
     type: `CITY_OFFERS`,
-    payload: offersData,
+    payload: offersData[0].cityOffers,
   })
 };
 
@@ -48,7 +48,7 @@ const reducer = (state = initialState, action) => {
           cityOffers: action.payload,
         });
     }
-
+console.log(state)
   return state;
 };
 
